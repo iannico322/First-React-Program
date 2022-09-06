@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #282d35;
+    height: 100vh;
+    margin-top: auto;
+    
+}
+
+.nav {
+    height: 91px;
+    display: flex;
+    justify-content: space-between;
+    background: #21222a;
+}
+.nav div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+    margin-left: 20px;
+}
+.nav div h1{
+    font-family: 'Inter', sans-serif;
+font-style: normal;
+font-weight: 700;
+font-size: 22.2535px;
+line-height: 27px;
+letter-spacing: -0.05em;
+
+color: #61DAFB;
+}
+
+
+.nav-logo {
+    width: 40px;
+    margin-left: 10px;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%; 
+    gap: 50px;
+    
+}
+
+.nav-items > li {
+   
+    padding: 10px;
+    cursor: pointer;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+
+    color: #DEEBF8;
+}
+.nav-items > li:hover{
+    color: rgba(255, 255, 255, 0.498);
+    background-color: #2b3039;
+}
+.main{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  max-height: 400px;
+  padding:  2% 0px;
+}
+.main div{
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    row-gap:10px;
+    column-gap: 10px;
+    justify-content: center;
+    margin: auto;
+    padding: 0px 10%;
+    
+    
+    max-height: 100px;
+    min-height: 300px;
+    min-width:200px;
+    max-width: 800px; 
+}
+.main div h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 39.06px;
+line-height: 47px;
+letter-spacing: -0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.main div li{
+    list-style: none;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+gap:50px;
+padding-bottom:2%; 
+color: #FFFFFF;
+
+max-height: 100px;
+
+
+}
+.main div li::before{
+    content: "\2022";
+  color: #61DAFB;
+  font-size: 30px;
+  display: inline-block; 
+  width: 1em;
+  margin-left: -1em;
+
+}
+.footer-cls{
+    
+    font-family: Verdana, sans-serif;
+    
+    display: flex;
+    width: 100%;
+    margin-top: auto; 
+    padding:20px 0px;
+    color: #cfcfcf;
+
+    font-size: 15px;
+    background: 
+#272723;
+    justify-content: center;
+    
+    
+}
+.svg-container{
+     
+    display: flex;
+ 
+    justify-content: flex-end;
+   
+    
+    
+}
+
+.react-logo{
+    position: absolute;
+    height: 400px;
+    overflow: hidden;
+    
+    display: flex;
+    
+    
+    
+    z-index: -1;
+
+ 
+    min-height: 20%;
+    max-height: 50%;
+}
+
+.cards-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 13%;
+    margin-bottom: auto;
+    gap: 100px;
+}
+.cards{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: column;
+   padding: 40px 40px;
+   min-height: 260px;
+   max-height: 1000px;
+   min-width: 200px;
+   max-width: 400px;
+  
+/* From https://css.glass */
+border-radius: 15px;
+background: linear-gradient(145deg, #242930, #2b3039);
+box-shadow:  5px 5px 10px #22262d,
+             -5px -5px 10px #2e343d;
+
+}
+.cards span{
+
+    margin: 0 9px;
+    font-size: 20px;
+    color: #61DAFB;
+}
+
+.cards h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30.06px;
+    line-height: 47px;
+    letter-spacing: -0.05em;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.cards p{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+gap:50px;
+padding-bottom:2%; 
+color: #FFFFFF;
+
+max-height: 100px;
+}
+@media only screen and (max-width: 600px) {
+  .main div{
+      flex-flow: row wrap;
+      padding-bottom: 20%;
+  }
+  .main div li{
+      max-width: 300px;
+  }
+  .cards-container{
+    flex-direction: column;
+}
+}
+@media only screen and (max-width: 997px) {
+    .cards-container{
+        flex-direction: column;
+        padding:0px 10%;
+        gap: 26px;
+    }
+}
+@media only screen and (max-width: 399px) {
+    .main div{
+        flex-flow: row wrap;
+    }
+    .main div li{
+        max-width: 300px;
+    }
+    .cards-container{
+      flex-direction: column;
+  }
+  }
